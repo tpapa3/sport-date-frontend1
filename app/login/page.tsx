@@ -46,7 +46,7 @@ const Login:React.FC = () => {
         isLoading: false,
         autoClose: 3000,
     });
-     router.push(`${process.env.REACT_APP_API_URL}`)
+     router.push(`${process.env.NEXT_PUBLIC_REACT_APP_API_URL}`)
     }
     
   }
