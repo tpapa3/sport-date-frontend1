@@ -42,7 +42,7 @@ export type Court = {
 
 const fetchStadiums = async (sport: string) => {
   const response = await axios.get(
-    `${process.env.REACT_APP_API_BACKEND_URL}/api/stadiums/find/bySport?sport=${sport}`
+    `${process.env.NEXT_PUBLIC_API_BACKEND_URL}/api/stadiums/find/bySport?sport=${sport}`
   );
   return response.data;
 };
