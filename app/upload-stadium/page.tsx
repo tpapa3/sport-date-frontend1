@@ -92,7 +92,7 @@ const UploadStadium: React.FC = () => {
         ]).flat())
   })
  async function upload(stadium: Record<string, unknown>){
-  const response = await axios.post(`${process.env.NEXT_PUBLIC_API_BACKEND_URL}/api/stadiums`, 
+  const response = await axios.post(`/api/stadiums`, 
     stadium
   ,{
     headers:{
