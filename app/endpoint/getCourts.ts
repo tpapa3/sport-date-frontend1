@@ -7,7 +7,7 @@ async function fetchCourtsByStadiumReserved(date: DateValue,hour: string,selecte
    const day = date.day >=10 ? date.day : '0'+ date.day
    const dateFormat = date.year + '-' + month  + '-' + day
    const response = await axios.get(
-    `${process.env.NEXT_PUBLIC_API_BACKEND_URL}/api/booking?date=${dateFormat}&hour=${hour}&selectedStadium=${selectedStadium}`
+    `/api/booking?date=${dateFormat}&hour=${hour}&selectedStadium=${selectedStadium}`
   );
   return response.data;
 }
