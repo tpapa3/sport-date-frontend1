@@ -1,7 +1,7 @@
 {
   "rewrites": [
     {
-      "source": "/api/(.*)",
+      "source": "/backend/(.*)",
       "destination": "http://ec2-13-53-122-46.eu-north-1.compute.amazonaws.com:8080/"
     }
   ]
